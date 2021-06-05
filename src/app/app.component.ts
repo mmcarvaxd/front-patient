@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { fadeAnimation } from './animations/fade.animation';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front-paciente';
+  
+  public getRouterOutletState(outlet: any) {
+    return outlet.isActivated ? outlet.activatedRoute : '';
+  }
 }

@@ -1,0 +1,51 @@
+<div class="text-center pt-10">
+    <div class="flex-1 min-w-0">
+        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+            Cadastro
+        </h2>
+    </div>
+</div>
+<div class="text-center">
+    <div class="flex-1 min-w-0">
+        <p class="text-sm font-bold leading-7 text-gray-400 sm:text-lg sm:truncate">
+            Entre com suas informações
+        </p>
+    </div>
+</div>
+<div class="grid grid-cols-1 max-w-xl mx-auto p-10 mt-10 rounded-md shadow-lg">
+    <div class="grid grid-cols-1">
+        <input type="text" placeholder="Nome" class="mb-5 rounded-sm" required  [(ngModel)]="patient.name">
+        <input type="number" min="0" placeholder="Idade" class="mb-5 rounded-sm" [(ngModel)]="patient.age">
+        <input type="number" min="0" placeholder="Peso (kg)" class="mb-5 rounded-sm" [(ngModel)]="patient.weight">
+        <input type="number" min="0" placeholder="Altura (cm)" class="mb-5 rounded-sm" [(ngModel)]="patient.height">
+        <input type="text" min="0" placeholder="CEP" class="mb-5 rounded-sm" (ngModelChange)="getCEP($event)" [(ngModel)]="patient.cep">
+        <div class="grid grid-cols-3 gap-4">
+            <input type="text" min="0" placeholder="Rua" class="mb-5 rounded-sm col-span-2 bg-gray-200" readonly [(ngModel)]="patient.address">
+            <input type="number" min="0" placeholder="Número da casa" class="mb-5 rounded-sm">
+        </div>
+        <input type="text" min="0" placeholder="Cidade" class="mb-5 rounded-sm bg-gray-200" readonly [(ngModel)]="patient.city">
+        <input type="text" min="0" placeholder="Estado" class="mb-5 rounded-sm bg-gray-200" readonly [(ngModel)]="patient.state">
+        <div class="grid grid-cols-2 md:grid-cols-3">
+            <div class="hidden md:block"></div>
+            <button type="button"
+                class="mt-5 mr-5 inline-flex text-center items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" class="mr-2 h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                </svg>
+                Cancelar
+            </button>
+            <button type="button"
+                    (click)="createPatient()"
+                class="mt-5 ml-5 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" class="mr-2 h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+                </svg>
+                Salvar
+            </button>
+        </div>
+    </div>
+</div>
