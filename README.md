@@ -1,27 +1,23 @@
-# FrontPaciente
+﻿# Angular Patient CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+Project made with a Java API and Angular
 
-## Development server
+## Group
+|Nome|RA|
+|--|--|
+|Claudio Rodriguez|081180042|
+|Leonardo Custódio|081180020|
+|Matheus Martins|081180025|
+|Vitor Martinez|081180044|
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## API link
+[Link to API github](https://github.com/mmcarvaxd/FTT-WEB-091)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Screenshots
+	Site Web version
+![Patient list](https://i.imgur.com/mLVdB0R.jpg)
+![Patient Form](https://i.imgur.com/wBxEx7F.jpg)
+	
+	App Version
+![enter image description here](https://i.imgur.com/m1hbXiB.jpg)
+![Patient Form App](https://i.imgur.com/JmRI5yD.jpg)
